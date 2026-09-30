@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Banking Analytics Lakehouse — Python Dependencies
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# LOCAL DEVELOPMENT (data generation, testing)
+# Install: pip install -r requirements.txt
+#
+# AWS GLUE RUNTIME
+# PySpark and AWS Glue libraries are pre-installed in the Glue environment.
+# Do NOT install them locally unless you have a compatible Spark setup.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core (data generation) ───────────────────────────────────────────────────
+pandas>=2.0.0
+
+# ── Testing ──────────────────────────────────────────────────────────────────
+pytest>=7.0.0
+
+# ── AWS SDK (for S3 upload scripts, optional) ────────────────────────────────
+boto3>=1.28.0
+
+# ── Code quality (optional) ──────────────────────────────────────────────────
+# flake8>=6.0.0
+# black>=23.0.0
+# mypy>=1.0.0

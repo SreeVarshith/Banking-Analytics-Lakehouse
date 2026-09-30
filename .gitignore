@@ -1,0 +1,67 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Banking Analytics Lakehouse — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Environment & Secrets ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── AWS Credentials ──────────────────────────────────────────────────────────
+credentials
+.aws/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ─────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.Python
+
+# ── Jupyter Notebooks ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS & IDE ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Test & Coverage ──────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ── Data (large generated files — keep sample CSVs tracked) ──────────────────
+# Uncomment the line below if you do NOT want to track generated data
+# data/sample/*.csv
+
+# ── Temporary ────────────────────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
